@@ -26,7 +26,7 @@ export default function EnergyChart() {
 
     return (
     <div className="w-full min-w-min shadow-sm px-6 py-16 rounded-lg flex flex-col gap-6 items-center justify-center">
-      <h1 className="text-2xl font-medium text-night">Consumo relativo</h1>
+      <h1 className="text-2xl font-medium text-night">Consumo relativo*</h1>
       {apiData ? (
         <div className="-ml-11">
           <BarChart width={280} height={300} data={data} barSize={50}>

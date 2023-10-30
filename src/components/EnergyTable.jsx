@@ -4,12 +4,16 @@ import { BsFuelPumpDieselFill, BsFuelPumpFill } from "react-icons/bs";
 import { FaSolarPanel } from "react-icons/fa6";
 import { FcDam } from "react-icons/fc";
 import { GiWindTurbine } from "react-icons/gi";
+import { TbHandMove } from "react-icons/tb"
 
 export default function EnergyTable() {
   const { apiData } = useEnergy();
 
   return (
-    <div className="w-full min-w-max shadow-sm px-6 py-8 text-xl rounded-lg flex flex-col gap-8 items-center justify-center">
+    <div className="relative w-full min-w-max shadow-sm px-6 py-8 text-xl rounded-lg flex flex-col gap-8 items-center justify-center">
+      <div className="absolute top-6 right-6 text-darkgreen">
+        <TbHandMove />
+      </div>
       <h1 className="text-2xl font-medium text-night">Recursos necessários</h1>
       {apiData ? (
         <div className="space-y-3 grid grid-cols-1 items-center w-full">
