@@ -3,11 +3,15 @@ import EnergyChart from "./EnergyChart";
 import EnergyConsumption from "./EnergyConsumption";
 import EnergyTable from "./EnergyTable";
 import Hints from "./Hints";
+import WaterConsumption from './WaterConsumption';
+import Time from './Time';
 
 export default function Main() {
   return (
     <EnergyContextProvider>
+      <Time />
       <EnergyConsumption />
+      <WaterConsumption />
       <EnergyTable />
       <EnergyChart />
       <Hints />
